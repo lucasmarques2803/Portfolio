@@ -1,8 +1,21 @@
+html {
+    --color-first: #F25A70;
+    --color-second: #7C5E99;
+    --color-third: #FFFFFF;
+    --color-black-first: #000;
+    --color-black-second: #3A4042;
+    --color-black-third: #828282;
+    --color-error: #BA1F33;
+    --color-warning: #CEB02A;
+    --color-success: #62C370;
+}
+
 header {
     display: flex;
     justify-content: space-between;
-    background-color: #7C5E99;
-    border-bottom: 10px solid #000;
+    align-items: center;
+    background-color: var(--color-second);
+    border-bottom: 10px solid var(--color-black-first);
     padding: 10px 20px;
 }
 
@@ -13,7 +26,7 @@ nav {
 a{
     display: inline-flex;
     align-items: center;
-    color: #FFF;
+    color: var(--color-third);
     font-size: 20px;
     font-family: "Fira Code", sans-serif;
     font-weight: 500;
@@ -23,20 +36,21 @@ a{
 
 a::before {
     content: "";
-    background-color: #F25A70;
+    background-color: var(--color-first);
     width: 10px;
     height: 10px;
     margin-right: 10px;
 }
 
-#button {
+.button {
     display: inline-block;
-    background-color: #F25A70;
-    box-shadow: 5px 5px 0 #000;
+    background-color: var(--color-first);
+    box-shadow: 5px 5px 0 var(--color-black-first);
     padding: 18px 20px;
     margin-right: 0;
+    transition: transform 100ms linear;
 }
 
-#button:hover {
-    opacity: 70%;
+.button:hover {
+    transform: scale(1.08);
 }
