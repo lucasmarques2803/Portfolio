@@ -24,3 +24,11 @@
 .main-section.-bdBlack {
     border-color: #000;
 }
+
+.main-section.-bgBlackSecond {
+    background-color: #3A4042;
+}
+
+.main-section.-bdNone {
+    border: none;
+}
